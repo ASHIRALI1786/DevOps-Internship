@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("Loading...");
 
   useEffect(() => {
-    fetch("http://localhost:8080/")
+    fetch("/api/")
       .then(async (response) => {
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}`);
